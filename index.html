@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Miabevoix — Média spécialisé dans la captation et la valorisation d'événements : mariages, anniversaires, concerts gospel, conférences de presse et clips vidéo.">
+  <title>Miabevoix — Captation & Valorisation d'Événements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#accueil" class="nav__logo">Miabé Voix</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/33600000000?text=Bonjour%20Miabevoix%2C%20je%20souhaite%20discuter%20d%27un%20projet." class="nav__cta" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Contact
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="accueil">
+    <div class="hero__bg" id="heroBg">
+      <img src="assets/concert-gospel.png" alt="" aria-hidden="true" class="hero__bg-img">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content container">
+      <p class="hero__label hero-animate" style="--i:0">Bienvenue sur Miabevoix</p>
+      <h1 class="hero__title hero-animate" style="--i:1">
+        Nous immortalisons vos<br>
+        <em>moments forts</em>
+      </h1>
+      <p class="hero__subtitle hero-animate" style="--i:2">
+        Captation et valorisation d'événements en images, en sons et en émotions.
+      </p>
+      <div class="hero__actions hero-animate" style="--i:3">
+        <a href="#services" class="btn btn--primary">Découvrir nos services</a>
+        <a href="https://wa.me/33600000000?text=Bonjour%20Miabevoix%2C%20je%20souhaite%20discuter%20d%27un%20projet." class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+          Démarrer un projet
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat reveal">
+        <span class="stat__number" data-target="20">0</span><span class="stat__suffix">+</span>
+        <span class="stat__label">Événements captés</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__number" data-target="2">0</span><span class="stat__suffix">+</span>
+        <span class="stat__label">Années d'expérience</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__number" data-target="100">0</span><span class="stat__suffix">%</span>
+        <span class="stat__label">Clients satisfaits</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__number" data-target="6">0</span>
+        <span class="stat__label">Types d'événements</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="a-propos">
+    <div class="container about__grid">
+      <div class="about__visual reveal">
+        <div class="about__image-main">
+          <img src="assets/equipement-audiovisuel.png" alt="Équipement de captation vidéo professionnelle">
+        </div>
+        <div class="about__image-accent">
+          <img src="assets/conference-presse.png" alt="Captation en conférence de presse">
+        </div>
+      </div>
+      <div class="about__text reveal">
+        <p class="section-label">À propos</p>
+        <h2 class="section-title">Votre média<br><em>spécialisé</em> en événements</h2>
+        <p class="about__desc">
+          <strong>Miabevoix</strong> est votre média spécialisé dans la captation et la valorisation d'événements.
+          Mariages, anniversaires, concerts gospel, conférences de presse, clips vidéo : nous immortalisons vos moments forts en images, en sons et en émotions.
+        </p>
+        <p class="about__desc">
+          Notre mission : raconter votre histoire avec authenticité et donner de l'éclat à chaque instant.
+        </p>
+        <a href="#contact" class="btn btn--primary">Travaillons ensemble</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__header reveal">
+        <p class="section-label">Ce que nous faisons</p>
+        <h2 class="section-title">Nos <em>services</em></h2>
+      </div>
+      <div class="services__grid">
+
+        <article class="service-card reveal reveal-scale">
+          <span class="service-card__num">01</span>
+          <div class="service-card__image">
+            <img src="assets/mariage.png" alt="Captation de mariage">
+          </div>
+          <h3>Mariages</h3>
+          <p>Filmez et photographiez le plus beau jour de votre vie avec émotion et élégance.</p>
+        </article>
+
+        <article class="service-card reveal reveal-scale">
+          <span class="service-card__num">02</span>
+          <div class="service-card__image">
+            <img src="assets/anniversaire.png" alt="Captation d'anniversaire">
+          </div>
+          <h3>Anniversaires</h3>
+          <p>Des souvenirs mémorables pour célébrer chaque étape de la vie en images.</p>
+        </article>
+
+        <article class="service-card reveal reveal-scale">
+          <span class="service-card__num">03</span>
+          <div class="service-card__image">
+            <img src="assets/concert-gospel.png" alt="Concert gospel">
+          </div>
+          <h3>Concerts Gospel</h3>
+          <p>Captation live de l'énergie, de la foi et de la musique qui touche les âmes.</p>
+        </article>
+
+        <article class="service-card reveal reveal-scale">
+          <span class="service-card__num">04</span>
+          <div class="service-card__image">
+            <img src="assets/conference-presse.png" alt="Conférence de presse">
+          </div>
+          <h3>Conférences de presse</h3>
+          <p>Couverture professionnelle pour vos annonces et événements médiatiques.</p>
+        </article>
+
+        <article class="service-card reveal reveal-scale">
+          <span class="service-card__num">05</span>
+          <div class="service-card__image">
+            <img src="assets/equipement-audiovisuel.png" alt="Production de clip vidéo">
+          </div>
+          <h3>Clips vidéo</h3>
+          <p>Création de clips artistiques et promotionnels avec une qualité cinématographique.</p>
+        </article>
+
+        <article class="service-card reveal reveal-scale">
+          <span class="service-card__num">06</span>
+          <div class="service-card__image">
+            <img src="assets/mariage.png" alt="Événements sur mesure">
+          </div>
+          <h3>Événements sur mesure</h3>
+          <p>Baptêmes, lancements, cérémonies : chaque projet reçoit une attention unique.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission / Why us -->
+  <section class="mission" id="mission">
+    <div class="container mission__inner">
+      <div class="mission__content reveal">
+        <p class="section-label">Notre mission</p>
+        <h2 class="section-title">Raconter votre histoire<br>avec <em>authenticité</em></h2>
+        <blockquote class="mission__quote">
+          « Donner de l'éclat à chaque instant, capturer l'émotion brute et la transformer en un récit visuel et sonore inoubliable. »
+        </blockquote>
+      </div>
+      <div class="mission__features">
+        <div class="feature reveal reveal-left">
+          <div class="feature__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <h4>Captation HD & 4K</h4>
+          <p>Équipement professionnel pour une qualité d'image et de son exceptionnelle.</p>
+        </div>
+        <div class="feature reveal reveal-right">
+          <div class="feature__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4>Livraison rapide</h4>
+          <p>Montage soigné et livraison dans les délais convenus avec vous.</p>
+        </div>
+        <div class="feature reveal reveal-left">
+          <div class="feature__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h4>Approche humaine</h4>
+          <p>Écoute, proximité et respect de l'authenticité de chaque moment.</p>
+        </div>
+        <div class="feature reveal reveal-right">
+          <div class="feature__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h4>Valorisation complète</h4>
+          <p>Photo, vidéo, montage et diffusion sur vos réseaux sociaux.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery strip -->
+  <section class="gallery">
+    <div class="gallery__track" id="galleryTrack">
+      <img src="assets/mariage.png" alt="Captation de mariage">
+      <img src="assets/anniversaire.png" alt="Captation d'anniversaire">
+      <img src="assets/concert-gospel.png" alt="Concert gospel">
+      <img src="assets/conference-presse.png" alt="Conférence de presse">
+      <img src="assets/equipement-audiovisuel.png" alt="Équipement audiovisuel">
+      <!-- duplicate for seamless loop -->
+      <img src="assets/mariage.png" alt="" aria-hidden="true">
+      <img src="assets/anniversaire.png" alt="" aria-hidden="true">
+      <img src="assets/concert-gospel.png" alt="" aria-hidden="true">
+      <img src="assets/conference-presse.png" alt="" aria-hidden="true">
+      <img src="assets/equipement-audiovisuel.png" alt="" aria-hidden="true">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner reveal">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Prêt à immortaliser<br>votre <em>prochain événement</em> ?</h2>
+      <p class="contact__desc">
+        Contactez-nous sur WhatsApp pour discuter de votre projet. Nous vous répondrons rapidement avec un devis personnalisé.
+      </p>
+      <a href="https://wa.me/33600000000?text=Bonjour%20Miabevoix%2C%20je%20souhaite%20discuter%20d%27un%20projet." class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Écrire sur WhatsApp
+      </a>
+      <div class="contact__socials">
+        <span>Suivez-nous</span>
+        <div class="social-links">
+          <a href="https://www.tiktok.com/@miabevoix" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 0012.68 0V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/miabevoix" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@miabevoix" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#accueil" class="footer__logo">
+        <img src="assets/logo.png" alt="MIABE VOIX" width="160" height="50">
+      </a>
+      <p class="footer__copy">&copy; 2026 Miabevoix. Tous droits réservés.</p>
+      <div class="footer__socials social-links">
+        <a href="https://www.tiktok.com/@miabevoix" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 0012.68 0V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/miabevoix" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@miabevoix" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/22891457148?text=Bonjour%20Miabevoix%2C%20je%20souhaite%20discuter%20d%27un%20projet." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
