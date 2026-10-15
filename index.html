@@ -7,7 +7,7 @@
   <title>Miabevoix — Captation & Valorisation d'Événements</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#a-propos">À propos</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#catalogue">Catalogue</a></li>
         <li><a href="#mission">Mission</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -42,8 +43,8 @@
     <div class="hero__content container">
       <p class="hero__label hero-animate" style="--i:0">Bienvenue sur Miabevoix</p>
       <h1 class="hero__title hero-animate" style="--i:1">
-        Nous immortalisons vos<br>
-        <em>moments forts</em>
+        Nous immortalisons<br>
+        vos <span>moments forts</span>
       </h1>
       <p class="hero__subtitle hero-animate" style="--i:2">
         Captation et valorisation d'événements en images, en sons et en émotions.
@@ -96,7 +97,7 @@
       </div>
       <div class="about__text reveal">
         <p class="section-label">À propos</p>
-        <h2 class="section-title">Votre média<br><em>spécialisé</em> en événements</h2>
+        <h2 class="section-title">Votre média<br><span>spécialisé</span> en événements</h2>
         <p class="about__desc">
           <strong>Miabevoix</strong> est votre média spécialisé dans la captation et la valorisation d'événements.
           Mariages, anniversaires, concerts gospel, conférences de presse, clips vidéo : nous immortalisons vos moments forts en images, en sons et en émotions.
@@ -114,7 +115,7 @@
     <div class="container">
       <div class="services__header reveal">
         <p class="section-label">Ce que nous faisons</p>
-        <h2 class="section-title">Nos <em>services</em></h2>
+        <h2 class="section-title">Nos <span>services</span></h2>
       </div>
       <div class="services__grid">
 
@@ -181,7 +182,7 @@
     <div class="container mission__inner">
       <div class="mission__content reveal">
         <p class="section-label">Notre mission</p>
-        <h2 class="section-title">Raconter votre histoire<br>avec <em>authenticité</em></h2>
+        <h2 class="section-title">Raconter votre histoire<br>avec <span>authenticité</span></h2>
         <blockquote class="mission__quote">
           « Donner de l'éclat à chaque instant, capturer l'émotion brute et la transformer en un récit visuel et sonore inoubliable. »
         </blockquote>
@@ -219,28 +220,235 @@
     </div>
   </section>
 
-  <!-- Gallery strip -->
-  <section class="gallery">
-    <div class="gallery__track" id="galleryTrack">
-      <img src="assets/mariage.png" alt="Captation de mariage">
-      <img src="assets/anniversaire.png" alt="Captation d'anniversaire">
-      <img src="assets/concert-gospel.png" alt="Concert gospel">
-      <img src="assets/conference-presse.png" alt="Conférence de presse">
-      <img src="assets/equipement-audiovisuel.png" alt="Équipement audiovisuel">
-      <!-- duplicate for seamless loop -->
-      <img src="assets/mariage.png" alt="" aria-hidden="true">
-      <img src="assets/anniversaire.png" alt="" aria-hidden="true">
-      <img src="assets/concert-gospel.png" alt="" aria-hidden="true">
-      <img src="assets/conference-presse.png" alt="" aria-hidden="true">
-      <img src="assets/equipement-audiovisuel.png" alt="" aria-hidden="true">
+  <!-- Catalogue -->
+  <section class="catalogue" id="catalogue">
+    <div class="container">
+      <div class="catalogue__intro reveal">
+        <p class="section-label">Catalogue</p>
+        <h2 class="section-title">Derrière l’objectif,<br>nos <span>images</span></h2>
+        <p class="catalogue__lead">Une sélection de tournages, reportages et captations réalisés par Miabé Voix.</p>
+      </div>
+
+      <div class="catalogue__filters" role="tablist" aria-label="Filtrer le catalogue">
+        <button type="button" class="is-active" data-filter="all">Tout</button>
+        <button type="button" data-filter="equipe">L’équipe</button>
+        <button type="button" data-filter="production">Tournages</button>
+        <button type="button" data-filter="reportage">Reportages</button>
+        <button type="button" data-filter="live">Événements</button>
+        <button type="button" data-filter="cinema">Cinéma</button>
+        <button type="button" data-filter="mariage">Mariages</button>
+      </div>
+    </div>
+
+    <div class="catalogue__body">
+
+      <article class="catalogue-group" data-group="equipe">
+        <div class="container">
+          <header class="catalogue-group__head reveal">
+            <span class="catalogue-group__index">01</span>
+            <div>
+              <h3>L’équipe</h3>
+              <p>Les visages derrière la captation, sur le plateau comme en coulisses.</p>
+            </div>
+          </header>
+          <div class="catalogue-grid">
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/equipe-rooftop.jpg" data-alt="L’équipe Miabé Voix en tenue de cérémonie">
+              <img src="assets/catalogue/equipe-rooftop.jpg" alt="L’équipe Miabé Voix en tenue de cérémonie">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/equipe-trio.jpg" data-alt="Portrait d’équipe">
+              <img src="assets/catalogue/equipe-trio.jpg" alt="Portrait d’équipe">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/equipe-miabe.jpg" data-alt="L’équipe Miabé Voix sur scène">
+              <img src="assets/catalogue/equipe-miabe.jpg" alt="L’équipe Miabé Voix sur scène">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/equipe-plateau.jpg" data-alt="Équipe plateau avec badges">
+              <img src="assets/catalogue/equipe-plateau.jpg" alt="Équipe plateau avec badges">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/equipe-attestation.jpg" data-alt="Remise d’attestation Excellmedia">
+              <img src="assets/catalogue/equipe-attestation.jpg" alt="Remise d’attestation Excellmedia">
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="catalogue-group" data-group="production">
+        <div class="container">
+          <header class="catalogue-group__head reveal">
+            <span class="catalogue-group__index">02</span>
+            <div>
+              <h3>Tournages</h3>
+              <p>Caméra, lumière, perche et gimbal — le geste technique au service de l’image.</p>
+            </div>
+          </header>
+          <div class="catalogue-grid">
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/prod-lumieres.jpg" data-alt="Tournage intérieur sous projecteurs">
+              <img src="assets/catalogue/prod-lumieres.jpg" alt="Tournage intérieur sous projecteurs">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/prod-exterieur.jpg" data-alt="Équipe de tournage en extérieur">
+              <img src="assets/catalogue/prod-exterieur.jpg" alt="Équipe de tournage en extérieur">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/prod-marches.jpg" data-alt="Préparatifs caméra sur les marches">
+              <img src="assets/catalogue/prod-marches.jpg" alt="Préparatifs caméra sur les marches">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/prod-gimbal.jpg" data-alt="Opérateur gimbal en intérieur">
+              <img src="assets/catalogue/prod-gimbal.jpg" alt="Opérateur gimbal en intérieur">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/prod-plage.jpg" data-alt="Tournage sur la plage">
+              <img src="assets/catalogue/prod-plage.jpg" alt="Tournage sur la plage">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/prod-perche.jpg" data-alt="Prise de son sur un tournage">
+              <img src="assets/catalogue/prod-perche.jpg" alt="Prise de son sur un tournage">
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="catalogue-group" data-group="reportage">
+        <div class="container">
+          <header class="catalogue-group__head reveal">
+            <span class="catalogue-group__index">03</span>
+            <div>
+              <h3>Reportages</h3>
+              <p>Interviews, forums et plateaux — la parole filmée avec précision.</p>
+            </div>
+          </header>
+          <div class="catalogue-grid">
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/report-festival.jpg" data-alt="Interview Festival du Film Européen Togo">
+              <img src="assets/catalogue/report-festival.jpg" alt="Interview Festival du Film Européen Togo">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/report-casque.png" data-alt="Écoute casque pendant une interview">
+              <img src="assets/catalogue/report-casque.png" alt="Écoute casque pendant une interview">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/report-forum.jpg" data-alt="Interview Forum de la Société Civile">
+              <img src="assets/catalogue/report-forum.jpg" alt="Interview Forum de la Société Civile">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/report-piscine.jpg" data-alt="Interview en terrasse">
+              <img src="assets/catalogue/report-piscine.jpg" alt="Interview en terrasse">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/report-ecran.jpg" data-alt="Contrôle image sur écran caméra">
+              <img src="assets/catalogue/report-ecran.jpg" alt="Contrôle image sur écran caméra">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/report-iphone.png" data-alt="Captation mobile en studio">
+              <img src="assets/catalogue/report-iphone.png" alt="Captation mobile en studio">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--full reveal" data-src="assets/catalogue/report-bureau.png" data-alt="Interview en bureau, lumière contrôlée">
+              <img src="assets/catalogue/report-bureau.png" alt="Interview en bureau, lumière contrôlée">
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="catalogue-group" data-group="live">
+        <div class="container">
+          <header class="catalogue-group__head reveal">
+            <span class="catalogue-group__index">04</span>
+            <div>
+              <h3>Événements live</h3>
+              <p>Concerts, festivals et cérémonies — l’énergie du direct, cadrée.</p>
+            </div>
+          </header>
+          <div class="catalogue-grid">
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/live-concert.jpg" data-alt="Captation d’un concert live">
+              <img src="assets/catalogue/live-concert.jpg" alt="Captation d’un concert live">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/live-sony.png" data-alt="Opérateur caméra Sony en live">
+              <img src="assets/catalogue/live-sony.png" alt="Opérateur caméra Sony en live">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/live-cameras.jpg" data-alt="Dispositif multi-caméras en extérieur">
+              <img src="assets/catalogue/live-cameras.jpg" alt="Dispositif multi-caméras en extérieur">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/live-nuit.png" data-alt="Captation nocturne d’événement">
+              <img src="assets/catalogue/live-nuit.png" alt="Captation nocturne d’événement">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/live-afropeens.png" data-alt="Captation festival Les Afropéens">
+              <img src="assets/catalogue/live-afropeens.png" alt="Captation festival Les Afropéens">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/live-today.jpg" data-alt="Couverture média New Today">
+              <img src="assets/catalogue/live-today.jpg" alt="Couverture média New Today">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/live-cap.jpg" data-alt="Équipe sur un événement sponsorisé">
+              <img src="assets/catalogue/live-cap.jpg" alt="Équipe sur un événement sponsorisé">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/live-eglise.jpg" data-alt="Captation d’une cérémonie">
+              <img src="assets/catalogue/live-eglise.jpg" alt="Captation d’une cérémonie">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/live-scene.png" data-alt="Caméras face à la scène">
+              <img src="assets/catalogue/live-scene.png" alt="Caméras face à la scène">
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="catalogue-group" data-group="cinema">
+        <div class="container">
+          <header class="catalogue-group__head reveal">
+            <span class="catalogue-group__index">05</span>
+            <div>
+              <h3>Cinéma &amp; clips</h3>
+              <p>Fiction, documentaire et clips — une écriture d’image plus libre.</p>
+            </div>
+          </header>
+          <div class="catalogue-grid">
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/cine-rue.jpg" data-alt="Scène de rue pour un tournage">
+              <img src="assets/catalogue/cine-rue.jpg" alt="Scène de rue pour un tournage">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/cine-pkondem.jpg" data-alt="Présentation du film P’Kondem">
+              <img src="assets/catalogue/cine-pkondem.jpg" alt="Présentation du film P’Kondem">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/cine-village.jpg" data-alt="Tournage de fiction en village">
+              <img src="assets/catalogue/cine-village.jpg" alt="Tournage de fiction en village">
+            </button>
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/cine-reportage.jpg" data-alt="Tournage documentaire en rue">
+              <img src="assets/catalogue/cine-reportage.jpg" alt="Tournage documentaire en rue">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--full reveal" data-src="assets/catalogue/cine-plage.jpg" data-alt="Clip dansé sur la plage">
+              <img src="assets/catalogue/cine-plage.jpg" alt="Clip dansé sur la plage">
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="catalogue-group" data-group="mariage">
+        <div class="container">
+          <header class="catalogue-group__head reveal">
+            <span class="catalogue-group__index">06</span>
+            <div>
+              <h3>Mariages</h3>
+              <p>Les instants intimes, filmés sans artifice.</p>
+            </div>
+          </header>
+          <div class="catalogue-grid">
+            <button type="button" class="catalogue-item reveal" data-src="assets/catalogue/mariage-preparatifs.jpg" data-alt="Préparatifs de mariage">
+              <img src="assets/catalogue/mariage-preparatifs.jpg" alt="Préparatifs de mariage">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--wide reveal" data-src="assets/catalogue/mariage-photo.jpg" data-alt="Photographie des préparatifs">
+              <img src="assets/catalogue/mariage-photo.jpg" alt="Photographie des préparatifs">
+            </button>
+            <button type="button" class="catalogue-item catalogue-item--full reveal" data-src="assets/catalogue/mariage-ceremonie.jpg" data-alt="Captation d’une cérémonie de mariage">
+              <img src="assets/catalogue/mariage-ceremonie.jpg" alt="Captation d’une cérémonie de mariage">
+            </button>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Fermer">
+      <span></span><span></span>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImage" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
 
   <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container contact__inner reveal">
       <p class="section-label">Contact</p>
-      <h2 class="section-title">Prêt à immortaliser<br>votre <em>prochain événement</em> ?</h2>
+        <h2 class="section-title">Prêt à immortaliser<br>votre <span>prochain événement</span> ?</h2>
       <p class="contact__desc">
         Contactez-nous sur WhatsApp pour discuter de votre projet. Nous vous répondrons rapidement avec un devis personnalisé.
       </p>
